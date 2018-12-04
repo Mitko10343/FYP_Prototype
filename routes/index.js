@@ -10,7 +10,7 @@ const spotifyProfie = require('../scripts/spotify');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index',{title:"hello"});
+    res.render('index',{title:"Welcom"});
 });
 
 router.get('/loginSpotify', (req, res) => {
