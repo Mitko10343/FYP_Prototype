@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js</title>
+    <% include ./partial/bootsrap.ejs %>
+    <link href="/styles/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <% include ./partial/navigation-bar.ejs %>
+    <div class="container" align="center" id="register-form-div">
+        <form class="form-horizontal" id="register-form" method="post" action="/registers">
+            <div class="form-group" ><h1 id="reg-h1">Register</h1></div>
+            <div class="form-group"><h3 id="error_msg"></h3></div>
+            <div id="inputs">
+                <div class="form-group">
+                    <label for="displayName">Display Name: </label>
+                    <input type="text" class="form-control" name="displayName" id="displayName" required/>
+                </div>
+                <div class="form-group">
+                    <label class="text-inline" for="c_pwd">Confirm Password:</label>
+                    <input type="password" class="form-control" id="c_pwd" required/>
+                </div>
+                <div class="form-group">
+                    <label class="text-inline" for="pwd">Password:</label>
+                    <input type="password" class="form-control" name="pwd" id="pwd" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" class="form-control" name="email" id="email" required/>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="register-btn" class="btn btn-info">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

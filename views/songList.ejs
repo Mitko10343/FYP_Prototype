@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js</title>
+    <%include partial/bootsrap.ejs%>
+    <link href="/styles/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<% include partial/navigation-bar.ejs%>
+<div class="container">
+    <h1>Song List</h1>
+    <% songs.forEach((song)=>{ %>
+        <ul>
+            <li>Name :<%=song.name%></li>
+            <li>Id : <%=song.Id%></li>
+            <li>Url : <%=song.url%></li>
+            <li>Track Number : <%=song.number%></li>
+        </ul>
+    <%});%>
+</div>
+</body>
+</html>

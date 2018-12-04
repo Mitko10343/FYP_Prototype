@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js</title>
+    <%include partial/bootsrap.ejs%>
+    <link href="/styles/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<% include partial/navigation-bar.ejs%>
+<div class="container">
+    <h1>Welcome <%=info.name%></h1>
+    <p class="contents"></p>
+    <ul class="profile-details list-group">
+        <li class="list-group-item">Email : <%=info.email%></li>
+        <li class="list-group-item">Country : <%=info.country%></li>
+        <li class="list-group-item">Name : <%=info.name%></li>
+        <li class="list-group-item">Token : <%=info.token%></li>
+        <li class="list-group-item">Refresh Token : <%=info.r_token%></li>
+    </ul>
+    <div class="input-group">
+        <a class="btn btn-defaul" href="/getSongs">
+            Get songs
+        </a>
+    </div>
+</div>
+</body>
+</html>
